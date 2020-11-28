@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Dinamic Profile | CSS</title>
+    <style>
+        body {
+            background-color: #333;
+        } 
+        .wrapper {
+            width: 300px;
+            height: 300px;
+            border: 10px solid #880000;
+            margin-top: 100px;
+            margin-left: 100px;
+            border-radius: 160px;
+            overflow: hidden;
+            box-shadow: 0 0 5px 5px black;
+        }
+        .profile {
+            border: 1px solid;
+            width: 600px;
+            height: 300px;   
+            transition: 2s; 
+            background-color: #111;
+            font-family: Arial;
+            text-align: center;
+        }
+        .profile:hover {
+            margin-left:-300px
+        }
+        .profile-picture {
+            width: 300px;
+            float: left;
+        }
+        .profile-name {
+            color: white;
+            font-size: 27px;
+            font-style: italic;
+            margin-top: 75px;
+        }
+        .profile-bio {
+            color: #ddd;
+        }
+        .profile-link {
+            color: orange;
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="profile">
+            <img class="profile-picture" src="https://laurasdoggiedoos.com/wp-content/uploads/2015/07/bradley.jpg" alt="">
+            <h2 class="profile-name">John Doe</h2>
+            <p class="profile-bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet expedita, sint perspiciatis obcaecati ullam rerum!</p>
+            <a class="profile-link" href="">read more</a>
+        </div>
+    </div>
+    
+</body>
+</html>
