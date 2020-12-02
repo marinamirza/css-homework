@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gallery | CSS | Pseudo classes/elements</title>
+    <style>
+        body {
+            margin: 0;
+            background-image: url(https://images.all-free-download.com/images/graphiclarge/wood_texture_208389.jpg);
+            background-size: auto 900px;
+   }
+        .title {
+            color: white;
+            text-align: center;
+            margin-bottom: 100px;
+            padding: 20px;
+            background-color: #0008
+        }
+        .photos {
+            text-align: center;
+        }
+        img {
+            width: 280px;
+            margin-right: -167px;
+            margin-left: -167px;
+            border: 5px solid white;
+            padding: 20px;
+            background-color: #111b;
+            box-shadow: 0 0 17px 3px black;
+            transition: 10s;
+        }
+        img:nth-child(5) {
+            transform: rotate(45deg);
+        }
+        img:nth-child(4) {
+            transform: rotate(25deg);
+        }
+        img:nth-child(3) {
+            transform: rotate(5deg);
+        }
+        img:nth-child(2) {
+            transform: rotate(-15deg);
+        }
+        img:nth-child(1) {
+            transform: rotate(-35deg);
+        }
+        img:hover {
+            transform: rotate(360deg);
+        }
+    </style>
+</head>
+<body>
+    <h1 class="title"> Gallery</h1>
+    <div class="photos">
+        <img src="https://i.picsum.photos/id/580/400/500.jpg?hmac=58u2vu_o1eesymWFYnMnP9avisschQzg9hha4eRoGqg" alt="">
+        <img src="https://i.picsum.photos/id/852/400/500.jpg?hmac=vJT0ts0cXQTwp3qDtk2r0R1H4kPvzCuVF5F45LgR7KQ" alt="">
+        <img src="https://i.picsum.photos/id/384/400/500.jpg?hmac=gkdyCs-lfEI0JZkRK4JJbuYeDCucNld67R44Pun_AZ0" alt="">
+        <img src="https://i.picsum.photos/id/260/400/500.jpg?hmac=1Z5ojNbNtzlWBaoeXSHWNZOH1yRiOBevrokbsy_5nps" alt="">
+        <img src="https://i.picsum.photos/id/51/400/500.jpg?hmac=v-z4Fg1Jwtam-sFWa03jHekv5imCLZn0GqWFNAHBHJA" alt="">
+    </div>
+    
+</body>
+</html>
