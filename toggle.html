@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Toggle Element</title>
+    <style>
+        .toggle {
+            background-color: #333;
+            border-radius: 25px;
+            padding: 7px;
+            font-family: Arial;
+            color: white;
+            cursor: pointer;
+            user-select: none;
+        }
+        .toggle .on {
+            display: none;
+        } 
+        .toggle input {
+            display: none;
+        }    
+        input:checked+.on+.dot+.off {
+            display: none;
+        }
+        input:checked+.on {
+            display: inline;
+            color: green
+        }
+        input:checked+.on+.dot {
+            color: green
+        }
+        .toggle .dot {
+            font-size: 36px;
+            line-height: 10px;
+        }
+    </style>
+</head>
+<body>
+    <label class="toggle">
+        <input type="checkbox"> 
+        <span class="on">ON</span>
+        <span class="dot">●</span>
+        <span class="off">OFF</span>
+    </label>
+    
+</body>
+</html>
