@@ -1,0 +1,50 @@
+body {
+    background-color: #333;
+}
+.preloader {
+    width: 200px;
+    height: 200px;
+   
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 300px;
+    /* margin: 300px auto 0 auto */
+}
+.preloader .large {
+    width: 170px;
+    height: 170px;
+    
+    border: 5px solid green;
+    padding: 10px;
+    border-radius: 100%;
+
+    border-top-color: transparent;
+    animation: rotation 3s infinite;
+}
+.preloader .medium {
+    width: 160px;
+    height: 160px;
+    
+    border: 5px solid green;
+    border-radius: 100%;
+
+    border-right-color: transparent;
+    animation: rotation-back 3s infinite;
+
+}
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes rotation-back {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-720deg);
+    }
+}
