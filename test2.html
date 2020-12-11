@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Business Card Example</title>
+  <style>
+    body{
+      background-color: #EEE;
+      color: white;
+    }
+    h1,h2,p,ul{
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      font-family: 'Times New Roman';
+    }
+    #business-card{
+      background-color: #111;
+      width: 400px;
+      height: 200px;
+      box-shadow:  2px 2px 2px 5px darkgrey;
+      
+    }
+    #business-card .name{
+        width: 150px;
+        height: 90px;
+        margin: 55px 10px 55px 20px;
+        border: 2px solid white;
+        border-top-color: transparent;
+        border-left-color: transparent;
+        border-bottom-color: transparent;
+        float: left; 
+        padding-right: 5px;
+        text-align: right;
+    
+    }
+    #business-card .info{
+        width: 400px;
+        height: 200px;
+        padding-top: 55px;
+        
+        
+    }
+    #business-card .name h1{
+        letter-spacing: 0.5px;
+      
+    }
+    #business-card .name h2{
+        color: rgb(85, 85, 16);
+        font-variant:small-caps;
+        font-size: 30px;
+    }
+    #business-card .name small{
+        color: grey;
+      
+    }
+    #business-card .info li{
+        color: grey;
+        font-size: small;
+      
+    }
+    #business-card .info li:before{
+        content: "#";
+        color: rgb(85, 85, 16);
+        margin-right: 5px;
+        font-size: 18px;
+
+    }
+
+
+  </style>
+</head>
+<body>
+  <div id="business-card">
+
+    <div class="name">
+      <h1>Firstname</h1>
+      <h2>Lastname</h2>
+      <small>web designer &#47; developer</small>
+    </div>
+    <div class="info">
+      <p>12345 Some Street, City<br>State, Province, Country</p>
+       <ul>
+         <li>+00 22 333444</li>
+         <li>email@somemail.example</li>
+         <li>www.exampledomain.example</li>
+       </ul>
+    </div>
+
+  </div>
+</body>
+</html>
