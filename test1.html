@@ -1,0 +1,64 @@
+
+Sus lipsește <html lang="en">, deși nu e obligatoriu de pus.
+Eu aș scrie mai întîi <title>Document</title>, apoi <style></style>.
+În style, rândul 6, trebuie să păstrăm ordinea ierarhiei, primul după importanță e h1, apoi h2.
+Rândul 8, la p, dupa blue lipsește ";"
+Randul 9 --> intre 200 si px nu trebuie sa fie spatiu.
+Randul 11 - green fara #, 
+Ce sens are sa folosim si class si id pentru bgc, oricum id va cistiga.
+Rândul 13, în title nu aș pune <br>.
+Rândul 18 și 19 le schimbăm cu locul, h1 e mai important ca h2.
+h1 contine prea mult text!!!
+Elementul semantic potrivit pentru paragrafe ar fi --> article, daca e un content independent, 
+daca e o sectiune din document atunci --> section.
+Nu e corect ca prin elementul <header></header> sa fie definit un paragraf.
+Randul 30 > logo.jpg, nu putem folosi virgula.
+Randul 28-29 imaginea se va afisa proportional, pe latimea 200px, inaltimea - proportional, aliniata la stinga.
+Randul 30, dupa tag este un punct de care nu avem nevoie; Recomand sa stergem din tag align si sa punem sus la style --> text-align.
+Randul 37, nu e inchis bine tagul p.
+R 32-37 --> in paragraf nu putem folosi h1-h6, nu e logic si nu se permite.
+h1-h6 au o importanta semantica mai mare ca p.
+Regula de aur --> h1 poate fi folosit doar o data/pagina si noi deja l-am folosit mai sus.
+b si strong sunt aproape echivalente, exista totusi diferenta, strong-ul il percep si robotii care inregistreaza sonor o lectura(de exemplu:).
+Rindul 38 --> folosim <figure></figure>
+Randul 43 --> nu e inchis bine tagul li.
+R 41-45 --> lipseste denumirea mapei unde sunt plasate linkurile la care facem referinta(si lipsesc extensiile .html sau altele).
+Nu are nici un sens sa punem la alt text - image 1, image 2, mai bine scriem ce reprezinta imaginea in 1-2 cuvinte.
+R 43 -->pentru ce sa dam clasa li-ului daca nu intentionam sa facem ceva cu el in style sus.
+R 40, cind dam id, nu folosim spatiu, ar fi bine sa punem o cratima in loc de spatiu.
+Fundalul listei va fi de culoare rosie, pentru ca mai important este scris in inline la body.
+Microformatele par a fi corecte, e bine))
+
+Propun asa-->
+<html>
+<body>
+    <header><h1>text</h1></header>
+        <article>
+            <h2>text</h2>
+            <figure>
+            <p>img</p>
+            </figure>
+            <section>
+                <p>text</p>
+            </section>
+                <ul>
+                <li>
+                    <figure>
+                        <a href=""><img src="" alt=""> <figcaption>text</figcaption></a>
+                    </figure>
+                </li>
+                *5
+                </ul>
+        </article>
+</body>
+</html>
+<!-- Putem si fara <figcaption></figcaption>
+As pune si float: left listei -->
+
+
+
+
+
+
+
+
